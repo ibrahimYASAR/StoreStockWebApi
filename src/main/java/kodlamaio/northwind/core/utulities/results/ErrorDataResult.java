@@ -1,19 +1,19 @@
 package kodlamaio.northwind.core.utulities.results;
 
-public class SuccessDataResult<T> extends DataResult<T>{
+public class ErrorDataResult<T> extends DataResult<T>{
 
-    public SuccessDataResult(T data, String message) {
-        super(data, true,message);
+    public ErrorDataResult(T data, String message) {
+        super(data, false,message);
     }
-    public SuccessDataResult(T data){
-        super(data,true);
-    }
-
-    public SuccessDataResult(String message) {
-        super(null, true,message);
+    public ErrorDataResult(T data){
+        super(data,false);
     }
 
-    public SuccessDataResult() {
-        super(null, true);
+    public ErrorDataResult(String message) {
+        super(null, false,message);
+    }
+
+    public ErrorDataResult() {
+        super(null, false);
     }
 }

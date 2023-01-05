@@ -1,11 +1,12 @@
 package kodlamaio.northwind.core.utulities.results;
-
-public class SuccessResult extends Result{
-    public SuccessResult(){
-        super(true);
+//başarısız işlemlerde kullanılacak
+public class ErrorResult extends Result{
+    //mesajsız başarısız işlem
+    public ErrorResult(){
+        super(false);
     }
-
-    public SuccessResult(String message){
-        super(true,message);
+    //mesajlı başarısız işlem
+    public ErrorResult(String message){
+        super(false,message);
     }
 }
