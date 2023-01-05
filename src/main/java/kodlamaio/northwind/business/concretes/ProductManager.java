@@ -1,0 +1,2 @@
+package kodlamaio.northwind.business.concretes;public class ProductManager {
+}

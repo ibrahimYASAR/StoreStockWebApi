@@ -1,0 +1,2 @@
+package kodlamaio.northwind.core.dataAccess;public interface UserDao {
+}
